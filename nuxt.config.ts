@@ -4,9 +4,18 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-primevue'
   ],
+  css: [
+    '~/assets/css/main.css'
+  ],
   primevue: {
     options: {
       unstyled: true
     },
+  },
+  postcss:{
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    }
   }
 })
