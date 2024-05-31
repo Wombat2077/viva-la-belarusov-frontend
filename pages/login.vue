@@ -24,8 +24,8 @@
             />
         </div>
         <div class="mt-8 flex flex-col justify-center sm:min-h-16 sm:min-w-50">
-            <button class="rounded-full sm:min-h-10 bg-buttonblue mb-2 px-2 hover:bg-buttonbluelight hover:text-black-800">Войти</button>
-            <button class="rounded-full sm:min-h-10 bg-buttonblue mb-2 px-2 hover:bg-buttonbluelight hover:text-black-800">Зарегистрироваться</button>
+            <BlueButton> Войти </BlueButton>
+            <BlueButton> Зарегистрироваться </BlueButton>
         </div>
         <div class="mt-10 flex">
             <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="my-1 mx-2">

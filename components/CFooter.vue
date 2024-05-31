@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-secondarybg sm:min-h-20 sm:min-w-full">
+    <div class="bg-secondary-bg sm:min-h-20 sm:min-w-full">
 
     </div>
 </template>
