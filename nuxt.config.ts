@@ -5,12 +5,11 @@ export default defineNuxtConfig({
     'nuxt-primevue'
   ],
   css: [
-    '~/assets/css/main.css'
+    '~/assets/css/main.css',
+    'primevue/resources/themes/aura-light-green/theme.css'
   ],
   primevue: {
-    options: {
-      unstyled: true
-    },
+    
   },
   postcss:{
     plugins: {
