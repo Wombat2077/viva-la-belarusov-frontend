@@ -17,8 +17,8 @@ export default {
         'secondary-bg-light': '#22374B',
         'min-cost': '#59ABE8',
         'button-yellow' : '#FAEE9D',
-        'button-yellow-light' : '#FBFFAE'
-
+        'button-yellow-light' : '#FBFFAE',
+        
       }
     },
   },
