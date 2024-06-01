@@ -1,7 +1,7 @@
 <template >
     <div class="flex justify-center items-center m-20">
     <div class="flex ring-gray-300 ring-1 rounded-lg justify-center w-max divide-solid divide-x-2 divide-gray-300">
-        <div v-show="isSettings" class="flex grow-0">
+        <div v-show="isSettings" class="flex shrink">
             <div class="flex flex-col p-5">
                 <label for="e-mail"  class="text-gray-600 mt-10">
                     Адрес электронной почты
@@ -21,13 +21,13 @@
                 <!-- <FileUpload accept="images/*" url="api/photo/"/> -->
             </div>
         </div>
-        <div v-show="isFavorite" class="flex grow-0">
+        <div v-show="isFavorite" class="flex grow">
             
         </div>
-        <div v-show="isHistory" class="flex grow-0">
+        <div v-show="isHistory" class="flex grow">
 
         </div>
-        <TieredMenu :model="bars" class="flex grow-1 rounded-l-none my-auto "/>
+        <TieredMenu :model="bars" class="flex items-center rounded-l-none  my-0 "/>
     </div>
 </div>
 </template>

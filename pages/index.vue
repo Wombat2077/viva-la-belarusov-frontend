@@ -40,8 +40,8 @@
     <div class="my-20 text-3xl">
         Специальные предложения
     </div>
-        <div class="flex flex-wrap flex-row flex-start gap-2 mx-10" >
-            <OfferCard class="sm:max-w-48 ring-gray-300 ring-1 rounded-md" image="~/assets/images/img.png" :minCost="1500" direction="Москва - Казань" />
+        <div v-for="offer in specialOffers" class="flex flex-wrap flex-row flex-start gap-2 mx-10" >
+            <OfferCard class="sm:max-w-48 ring-gray-300 ring-1 rounded-md" image="offer.image" :minCost="offer.minCost" :direction="offer.direction" />
         </div>
     </div>
     <CFooter  class="mt-10"/>
@@ -66,4 +66,7 @@
             code: "kzn" 
         }
     ])
+    const specialOffers = [
+
+    ]
 </script>
