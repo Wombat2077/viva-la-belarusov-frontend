@@ -30,7 +30,7 @@ async function onSubmit (event) {
 <template class="flex justify-center">
 <div class="h-screen w-full flex place-content-center place-items-center">
 
-  <div class="surface-card p-4 shadow-2 border-round w-full w-[40rem] ">
+  <div class="surface-card p-4 shadow-2 border-round w-[40rem]">
     <div class="text-center mb-5 flex flex-col gap-4 place-items-center">
       <img src="https://raw.githubusercontent.com/containers/common/main/logos/podman-logo-full-vert.png" class="w-[20rem] stroke-black">
       <div class="text-900 text-3xl font-medium mb-3">Добро пожаловать</div>
