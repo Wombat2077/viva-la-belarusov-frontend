@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light'
   },
-  modules: ['nuxt-primevue', "@nuxt/ui"],
+  modules: ['nuxt-primevue'],
   css: [
     '~/assets/css/main.css',
     'primevue/resources/themes/aura-light-green/theme.css'

@@ -28,21 +28,35 @@ async function onSubmit (event) {
 </script>
 
 <template class="flex justify-center">
-<div class="bg-white text-black w-max mx-auto my-10 flex justify-center ">
-  <UForm :validate="validate" :state="state" class="flex flex-col space-y-4 bg-white text-black rounded-lg ring-gray-300 ring-1 p-5" @submit="onSubmit">
-    <div>
-      Авторизация
-    </div>
-    <UFormGroup label="Email" name="email">
-      <UInput v-model="state.email"  inputClass="rounded-full focus:ring-indigo-600"/>
-    </UFormGroup>
+<div class="h-screen w-full flex place-content-center place-items-center">
 
-    <UFormGroup label="Введите пароль" name="password">
-      <UInput v-model="state.password" type="password" class="outline-indigo-600"  inputClass="rounded-full focus:ring-indigo-600"/>
-    </UFormGroup>
-    <BlueButton type="submit" class="ml-auto">
-      Войти
-    </BlueButton> 
-  </UForm>
- </div> 
+  <div class="surface-card p-4 shadow-2 border-round w-full w-[40rem] ">
+    <div class="text-center mb-5 flex flex-col gap-4 place-items-center">
+      <img src="https://raw.githubusercontent.com/containers/common/main/logos/podman-logo-full-vert.png" class="w-[20rem] stroke-black">
+      <div class="text-900 text-3xl font-medium mb-3">Добро пожаловать</div>
+    <div class="flex gap-2 max-sm:flex-col">
+      <span class="text-600 font-medium line-height-3">У вас ещё нет аккаунта?</span>
+      <NuxtLink to="/registry" class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Создайте сейчас!</NuxtLink>
+    </div>
+    </div>
+
+    <div>
+      <label for="email1" class="block text-900 font-medium mb-2">Почта</label>
+      <InputText id="email1" type="text" class="w-full mb-3" />
+
+      <label for="password1" class="block text-900 font-medium mb-2">Пароль</label>
+      <InputText id="password1" type="password" class="w-full mb-3" />
+
+      <div class="flex align-items-center justify-content-between mb-6">
+        <div class="flex align-items-center">
+          <Checkbox id="rememberme1" :binary="true" v-model="checked" class="mr-2"></Checkbox>
+          <label for="rememberme1">Запомнить меня</label>
+        </div>
+        <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-not-allowed ">Забыли пароль?</a>
+      </div>
+
+      <Button label="Войти" icon="pi pi-user" class="w-full bg-indigo-500"></Button>
+    </div>
+  </div>
+</div>
 </template>
