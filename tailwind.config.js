@@ -19,6 +19,9 @@ export default {
         'button-yellow' : '#FAEE9D',
         'button-yellow-light' : '#FBFFAE',
         
+      },
+      margin: {
+        '1/4' : '25%'
       }
     },
   },

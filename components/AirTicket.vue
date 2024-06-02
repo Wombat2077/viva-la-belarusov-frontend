@@ -54,9 +54,9 @@
             <span class="font-bold">1х8 кг</span>
           </div>
         </div> 
-          <div class="flex flex-col items-center mb-2 w-min">
+          <div class="flex flex-col items-center mb-2 w-max">
             <span class="text-gray-600">Цена:</span>
-            <span class="font-bold w-min">69 000 P</span>
+            <span class="font-bold w-min hyphens-none">69 000 P</span>
           </div>
 
   

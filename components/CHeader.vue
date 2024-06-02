@@ -3,7 +3,7 @@
     <div class="flex spacex-2 bg-secondary-bg sm:min-h-20 sm:min-w-full p-5 text-white">
         <div class="mr-10 hover:bg-secondary-bg-light sm:min-w-20 flex justify-center items-center -my-5 -ml-5 p-2" v-show="showReturnArrow">
             <a>
-                <img src="@/assets/svg/return-arrow.svg">
+                <SvgoLogo class="w-6"></SvgoLogo>
             </a>
         </div>
         <img src="@/assets/svg/logo.svg">
@@ -16,15 +16,29 @@
 <script setup>
     import Menu from "primevue/menu";
     import { ref } from "vue";
+    import { userStore } from "~/src/stores/user"
     const profileMenu = ref();
     const unAuthOptions = ref([
         {
             label: "Войти",
+            command: () => { navigateTo({path: "login"}) } 
         },
         {
             label: "Зарегистрироваться",
+            command: () => { navigateTo({path: "registry"})}
         }
     ]);
+    const AuthOptions = ref([
+        {
+            label: "Профиль",
+            command: () => { navigateTo({ path: "profile" }) }
+        },
+        {
+            label: "Выйти",
+            command: () => { navigateTo({ path: "logout" }) }
+        }
+    ])
+
     function toggle(event){
         profileMenu.value.toggle(event);
     }
