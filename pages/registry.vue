@@ -37,32 +37,27 @@ async function onSubmit (event) {
 
 </script>
 
-<template class="flex justify-center">
-<div class="bg-white text-black min-w-max  mx-auto my-10 flex justify-center ">
-  <UForm :validate="validate" :state="state" class="flex flex-col space-y-4 bg-white text-black rounded-lg ring-gray-300 ring-1 px-10 p-5"  @submit="onSubmit(event)">
-    <div>
-      Регистрация
+<template >
+  <div class="h-screen w-full flex place-content-center place-items-center">
+
+    <div class="surface-card p-4 shadow-2 border-round w-[40rem]">
+      <div class="text-center mb-5 flex flex-col gap-4 place-items-center">
+        <img src="https://raw.githubusercontent.com/containers/common/main/logos/podman-logo-full-vert.png" class="w-[20rem] stroke-black">
+        <div class="text-900 text-3xl font-medium mb-3">Регистрация</div>
+      </div>
+      <div>
+
+        <label for="email1" class="block text-900 font-medium mb-2">Имя</label>
+        <InputText id="name" type="text" class="w-full mb-3" />
+
+        <label for="email1" class="block text-900 font-medium mb-2">Почта</label>
+        <InputText id="email1" type="text" class="w-full mb-3" />
+
+        <label for="password1" class="block text-900 font-medium mb-2">Пароль</label>
+        <InputText id="password1" type="password" class="w-full mb-3" />
+
+        <Button label="Подтвердить аккаунт" icon="pi pi-user" class="w-full mt-2 bg-indigo-500"></Button>
+      </div>
     </div>
-    <UFormGroup label="Имя пользователя" name="username">
-      <UInput v-model="state.username"  inputClass="rounded-full focus:ring-indigo-600"/>
-    </UFormGroup>
-    <UFormGroup label="Email" name="email">
-      <UInput v-model="state.email"  inputClass="rounded-full focus:ring-indigo-600"/>
-    </UFormGroup>
-    <UFormGroup label="Номер телефона" name="phoneNumber">
-      <InputMask mask="+7 (999)-999-99-99" v-model="state.phoneNumber"  class="rounded-full pl-2 text-gray-600 ring-gray-300 ring-1 focus:ring-indigo-600 h-8"/>
-    </UFormGroup>
-
-    <UFormGroup label="Введите пароль" name="password">
-      <UInput v-model="state.password" type="password" class="outline-indigo-600"  inputClass="rounded-full focus:ring-indigo-600"/>
-    </UFormGroup>
-    <UFormGroup label="Повторите пароль" name="password">
-      <UInput v-model="state.passwordConfirm" type="password" class="outline-indigo-600" inputClass="rounded-full focus:ring-indigo-600"/>
-    </UFormGroup>
-
-    <BlueButton  class="ml-auto" type="submit">
-      Зарегистрироваться
-    </BlueButton> 
-  </UForm>
- </div> 
+  </div>
 </template>
